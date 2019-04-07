@@ -1,0 +1,55 @@
+
+
+<view class='listbook'>
+   <!-- 搜索 -->
+  <view class='search'>
+    <view class='search-box search-book'>
+      <view class='ico'>
+        <image src='../../static/ico/search.png'></image>
+      </view>
+      <view class='search-text'>
+        <text>搜索全部商品</text>
+      </view>
+    </view>
+  </view>
+  <!-- 分类 -->
+  <view class='class-book'>
+    <view class='{{activeHealth}}' data-tap='health' bindtap='gobooklist'>健康养生</view>
+    <view class='{{activeYounth}}' data-tap='younth' bindtap='gobooklist'>青春文学</view>
+    <view class='{{activePeople}}' data-tap='people' bindtap='gobooklist'>人物传记</view>
+    <view class='{{activeChild}}' data-tap='child' bindtap='gobooklist'>儿童图书</view>
+    <view class='{{activeScience}}' data-tap='science' bindtap='gobooklist'>科学技术</view>
+    <view class='{{activehotsale}}' data-tap='bookmoretop' bindtap='gobooklist'>热销图书</view>
+    <view class='{{activeFree}}' data-tap='free99' bindtap='gobooklist'>9.9包邮</view>
+    <view class='{{activeNewbook}}' data-tap='newbook' bindtap='gobooklist'>新书上架</view>
+  </view>
+  <!-- 列表 -->
+  <view class='book-list'>
+
+        <block wx:for="{{list}}">
+          <view class='movie-item' data-id='{{item.id}}' bindtap='gobookdetail'>
+          <view class='movie-box'>
+            <view class='movie-poster'>
+              <image src='{{myhost}}{{item.coverurl}}'></image>
+            </view>
+            <view class='movie-info'>
+              <view class='p-title'>{{item.bookname}}</view>
+              <view class='dirctor'>作者：{{item.author}}</view>
+              <view class='writer'>出版社：{{item.publicer}}</view>
+              <view class='role'>出版日期：{{item.date}}</view>
+              <view class='p-descript'>{{item.descript}}</view>
+              <view class='p-price'>￥<text>{{item.price_int}}.</text>{{item.price_dec}}</view>
+              <view class='p-comment'>
+                <view class='stars starsx21'>
+                    <star starnums="{{item.stars}}"></star>
+                </view>
+                <view class='counts'>{{item.comment_count}}条评论</view>
+              </view>
+            </view>
+          </view>
+        </view>
+       </block> 
+
+  </view>
+
+</view>

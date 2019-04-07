@@ -1,0 +1,109 @@
+/* pages/detailmusic/detailmusic.wxss */
+/* page{
+  background-color: #eaeaea;
+} */
+.player{
+  position: relative;
+  width: 680rpx;
+  height: 130rpx;
+  margin: 0 auto;
+  border: #E1E1E1 1PX solid;
+  background-color: #fcfcfc;
+  margin-top: 13rpx;
+  overflow: hidden;
+}
+.player text {
+  position: absolute;
+}
+.music-name{
+  left: 160rpx;
+  top: 32rpx;
+  font-size: 26rpx;
+  color: #333;
+}
+.music-singer{
+  left: 160rpx;
+  top: 76rpx;
+  font-size: 22rpx;
+  color: #9d9d9d;
+}
+.music-time{
+  right: 21rpx;
+  top: 27rpx;
+  font-size: 23rpx;
+  color: #9d9d9d;
+}
+.poster{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 130rpx;
+  height: 130rpx;
+  overflow: hidden;
+}
+.poster image{
+  width: 48rpx;
+  height: 48rpx;
+}
+
+/**************价格****************/
+
+.price-box{
+  padding: 20rpx 35rpx;
+}
+.vip-price{
+    display: flex;
+    align-items: center;
+}
+.vip-price .price{
+  color: #ff0000;
+  font-size: 24rpx;
+  margin-left: 10rpx;
+}
+.btn{
+  display: flex;
+  font-size: 20rpx;
+  align-items: center;
+  color: #000;
+  margin: 20rpx 0;
+}
+.btn-item{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 106rpx;
+  height: 35rpx;
+  border-radius: 50rpx;
+  margin-right: 20rpx;
+  border: #6699cc 1px solid;
+}
+.btn image{
+  width: 21rpx;
+  height: 21rpx;
+  margin-right: 5rpx;
+}
+/****************/
+.view{
+  background-color: #fff;
+}
+.title-name{
+  font-size: 28rpx;
+  color: #333;
+  font-weight: bold;
+  border-left: #ff0000 7rpx solid;
+  padding-left: 10rpx;
+}
+.view-title{
+  display: flex;
+  justify-content: space-between;
+}
+.add-favorite image{
+  width: 135rpx;
+  height: 35rpx;
+}
+.view-body{
+  font-size: 20rpx;
+  color: #808080;
+  padding-left: 18rpx;
+  margin-top: 20rpx;
+}

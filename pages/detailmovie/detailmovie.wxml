@@ -1,0 +1,164 @@
+
+
+<view class='detailmovie'>
+
+
+    <!-- 简介 -->
+  <view class='view'>
+    <view class='comm-box'>
+        <view class='view-title'>
+          <view class='title-name'>{{datas.moviename}}</view>
+          <view class='add-favorite'>
+            <image src='../../static/ico/addcollect.png'></image>
+          </view>
+        </view>
+        <view class='view-body'><rich-text nodes="{{datas.descript}}"></rich-text></view>
+    </view>
+  </view>
+  
+  <!-- 花絮欣赏 -->
+
+  <view class='enjoy-movie'>
+    <view class='comm-info-name'>花絮欣赏</view>
+    <view class='click-movie'>
+      <!-- <image src='http://www.huachengzhubao.com/syweb10/static/ico/play_btn.png'></image> -->
+      <video
+    id="myVideo"
+    src="{{datas.movieurl}}"
+    danmu-list="{{danmuList}}"
+    enable-danmu
+    danmu-btn
+    controls
+  >
+  <!-- <cover-image src='{{myhost}}{{datas.coverurl}}'></cover-image> -->
+  </video>
+    </view>
+    <!-- 会员价 -->
+    <view class='vip-price'>
+      <view class='comm-info-name'>单片会员价</view>
+      <view class='price'>￥<text>{{datas.price_int}}.</text>{{datas.price_dec}}</view>
+      <view class='mark-tx'>（注：版权所有腾讯公司，未经许可，不得转载）</view>
+    </view>
+    <view class='btn'>
+      <view class='on-line'>观赏正片</view>
+      <view class='download'>下载影片</view>
+    </view>
+  </view>
+  <!-- 相关信息 -->
+  <view class='comm-info'>
+    <view class='comm-box'>
+      <view class='comm-info-name'>相关信息</view>
+    </view>
+    <view class='commonstyle author'>导演： {{datas.derector}}<text class='viewproduct'>查看作品></text></view>
+    <view class='commonstyle publicer'>主演：{{datas.roles}}</view>
+    <view class='commonstyle class'>类型：{{datas.class_style}}</view>
+    <view class='commonstyle class'>国家： {{datas.class_country}}<text class='viewproduct'>查看作品></text></view>
+    <view class='commonstyle class'>片长： {{datas.longs}}分钟</view>
+  </view>
+  <!-- 商品评论 -->
+  <view class='comm-comment'>
+          <view class='comm-box movie-info'>
+            <view class='comm-info-name yellow-line'>商品评论</view>
+            <view class='grade-box'>
+              <view class='grade'>综合评分：<text>9.6</text>分</view>
+              <view class='people'>10086人参与</view>
+            </view>
+          </view>
+
+          <view class='comment-item'>
+            <view class='comment-author'>
+              <view class='author-header'>
+                <image src='http://www.huachengzhubao.com/syweb10/static/images/header.png'></image>
+              </view>
+              <view class='author-stars'>
+                <view class='author-name'>李**</view>
+                <view class='starsx21 comment-stars'>
+                  <image class='star-red-25x25' src='http://www.huachengzhubao.com/syweb10/static/ico/star.png'></image>
+                  <image class='star-red-25x25' src='http://www.huachengzhubao.com/syweb10/static/ico/star.png'></image>
+                  <image class='star-red-25x25' src='http://www.huachengzhubao.com/syweb10/static/ico/star.png'></image>
+                  <image class='star-red-25x25' src='http://www.huachengzhubao.com/syweb10/static/ico/star.png'></image>
+                  <image class='star-red-25x25' src='http://www.huachengzhubao.com/syweb10/static/ico/star.png'></image>
+                </view>
+              </view>
+            </view>
+            <view class='comment-content'>
+                      立刻就很过分的第三
+            </view>
+          </view>
+
+          <view class='comment-item'>
+            <view class='comment-author'>
+              <view class='author-header'>
+                <image src='http://www.huachengzhubao.com/syweb10/static/images/header.png'></image>
+              </view>
+              <view class='author-stars'>
+                <view class='author-name'>李**</view>
+                <view class='starsx21 comment-stars'>
+                  <image class='star-red-25x25' src='http://www.huachengzhubao.com/syweb10/static/ico/star.png'></image>
+                  <image class='star-red-25x25' src='http://www.huachengzhubao.com/syweb10/static/ico/star.png'></image>
+                  <image class='star-red-25x25' src='http://www.huachengzhubao.com/syweb10/static/ico/star.png'></image>
+                  <image class='star-red-25x25' src='http://www.huachengzhubao.com/syweb10/static/ico/star.png'></image>
+                  <image class='star-red-25x25' src='http://www.huachengzhubao.com/syweb10/static/ico/star.png'></image>
+                </view>
+              </view>
+            </view>
+            <view class='comment-content'>
+                      立刻就很过分的第三这谁顶得住啊
+            </view>
+          </view>
+
+          <view class='comment-item'>
+            <view class='comment-author'>
+              <view class='author-header'>
+                <image src='http://www.huachengzhubao.com/syweb10/static/images/header.png'></image>
+              </view>
+              <view class='author-stars'>
+                <view class='author-name'>李**</view>
+                <view class='starsx21 comment-stars'>
+                  <image class='star-red-25x25' src='http://www.huachengzhubao.com/syweb10/static/ico/star.png'></image>
+                  <image class='star-red-25x25' src='http://www.huachengzhubao.com/syweb10/static/ico/star.png'></image>
+                  <image class='star-red-25x25' src='http://www.huachengzhubao.com/syweb10/static/ico/star.png'></image>
+                  <image class='star-red-25x25' src='http://www.huachengzhubao.com/syweb10/static/ico/star.png'></image>
+                  <image class='star-red-25x25' src='http://www.huachengzhubao.com/syweb10/static/ico/star.png'></image>
+                </view>
+              </view>
+            </view>
+            <view class='comment-content'>
+                      立刻就很过分的第三那我好饿啊啊啊啊晚上吃什么啊啊啊啊
+            </view>
+          </view>
+
+  </view>
+
+
+    <!-- 垫高 -->
+      <view style='height:200rpx;'></view>
+    <!-- 底部 -->
+
+
+    <view class='footer'>
+      <view class='hsc fl'>
+        <view class='hsc-home' bindtap='gohome'>
+          <view class='hsc-home-img'><image src='../../static/ico/tabbar_home_gray.png'></image></view>
+          <view class='hsc-home-text'>首页</view>
+        </view>
+        <view class='hsc-share'>
+          <button></button>
+            <view class='share-ico'><image src='../../static/ico/share.png'></image></view>
+            <view class='share-text'>分享</view>
+        </view>
+        <view class='hsc-cart' bindtap='gocart'>
+           <view class='hsc-home-img'><image src='../../static/ico/tabbar_cart_gray.png'></image></view>
+           <view class='hsc-home-text'>购物车</view>
+           <view class='hsc-cart-count'>{{cartCounts}}</view>
+        </view>
+      </view>
+      <view class='addtocart fr' bindtap='add3cart'>加入购物车</view>
+      <view class='buynow fr'>立即购买</view>
+    </view>
+
+
+
+
+
+</view>

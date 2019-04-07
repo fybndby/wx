@@ -1,0 +1,117 @@
+
+
+page{
+  background-color: #eaeaea;
+}
+/**************简介******************/
+.view{
+  background-color: #fff;
+}
+.comm-box{
+  padding: 0 35rpx;
+}
+.title-name{
+  font-size: 28rpx;
+  color: #333;
+  font-weight: bold;
+  border-left: #ff0000 7rpx solid;
+  padding-left: 10rpx;
+}
+.view-title{
+  display: flex;
+  justify-content: space-between;
+  padding-top: 30rpx;
+}
+.add-favorite image{
+  width: 135rpx;
+  height: 35rpx;
+}
+.view-body{
+  font-size: 20rpx;
+  color: #808080;
+  padding-left: 18rpx;
+  margin-top: 20rpx;
+}
+/**************花絮********************/
+.enjoy-movie{
+  background-color: #fff;
+  padding: 15rpx 35rpx;
+  margin-bottom: 30rpx;
+}
+.enjoy-movie .comm-info-name{
+  border-left: #6699cc 7rpx solid;
+  margin: 15rpx 0;
+}
+.click-movie{
+  /* position: relative; */
+  width: 600rpx;
+  height: 350rpx;
+  margin: 0 auto;
+}
+.click-movie #myVideo{
+  width: 600rpx;
+  height: 350rpx;
+}
+.click-movie image{
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  margin-left: -40rpx;
+  margin-top: -40rpx;
+  width: 80rpx;
+  height: 80rpx;
+}
+/***vip****/
+.vip-price{
+  display: flex;
+  align-items: center;
+  flex-wrap: nowrap;
+}
+.vip-price .price{
+  color: #ff0000;
+  font-size: 24rpx;
+  margin-left: 10rpx;
+}
+.price text{
+  font-size: 32rpx;
+}
+.mark-tx{
+  font-size: 18rpx;
+  color: #999;
+  margin-left: 30rpx;
+}
+.btn{
+  display: flex;
+  font-size: 26rpx;
+  align-items: center;
+  color: #fff;
+  padding-top: 10rpx;
+  padding-bottom: 20rpx;
+}
+.on-line,.download{
+  border-radius: 50rpx;
+  padding: 4rpx 15rpx;
+}
+.btn .on-line{
+    background-color: #ffcc00;
+}
+.btn .download{
+  background-color: #99cc00;
+  margin-left: 20rpx;
+}
+/********商品评论**********/
+.movie-info{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.grade-box{
+  display: flex;
+  color: #333;
+}
+.grade-box text{
+  color: #DD3924;
+}
+.grade {
+  margin-right: 30rpx;
+}

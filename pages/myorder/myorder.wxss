@@ -1,0 +1,79 @@
+
+
+page{
+  background-color: #f1f1f1;
+}
+.order-item{
+  background-color: #fff;
+  margin-bottom: 30rpx;
+}
+.order-box{
+  display: flex;
+  justify-content: space-between;
+  padding: 27rpx 42rpx;
+}
+.poster image{
+  width: 175rpx;
+  height: 225rpx;
+}
+.orderinfo{
+  width: 450rpx;
+}
+.title{
+  font-size: 26rpx;
+  color: #000;
+  height: 70rpx;
+  overflow: hidden;
+}
+.price-date{
+  display: flex;
+  justify-content: space-between;
+  padding: 0 10rpx;
+  height: 60rpx;
+  line-height: 60rpx;
+  font-size: 21rpx;
+  color: #5d5d5d;
+  border-top: #999 1px dotted;
+  border-bottom: #999 1px dotted;
+  margin: 20rpx 0;
+}
+.comment{
+  display: flex;
+  align-items: center;
+  height: 32rpx;
+}
+.counts{
+  font-size: 21rpx;
+  color: #5d5d5d;
+  margin-left: 20rpx;
+}
+.stars{
+  display: flex;
+  align-items: center;
+}
+.editbtn{
+  background-color: #8067AB;
+  width: 109rpx;
+  height: 32rpx;
+  font-size: 18rpx;
+  border-radius: 50rpx;
+  line-height: 32rpx;
+  color: #fff;
+  margin-left: 110rpx;
+  text-align: center;
+}
+.comment-body{
+  font-size: 21rpx;
+  color: #5d5d5d;
+  margin-top: 16rpx;
+}
+.public-comment{
+  font-size: 18rpx;
+  color: #fff;
+  background-color: #ff0000;
+  width: 109rpx;
+  height: 32rpx;
+  border-radius: 50rpx;
+  line-height: 32rpx;
+  text-align: center;
+}

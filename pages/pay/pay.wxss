@@ -1,0 +1,98 @@
+/* pages/pay/pay.wxss */
+
+.contact{
+  height: 214rpx;
+  background: url('https://www.huachengzhubao.com/syweb10/static/images/paybg.gif') repeat-x;
+  background-size: contain;
+}
+.contact-box{
+  padding: 35rpx 27rpx;
+}
+.whotel{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.who image{
+  width: 20rpx;
+  height: 28rpx;
+  margin-right: 10rpx;
+}
+.who text,.tel{
+  font-size: 26rpx;
+  color: #000;
+  font-weight: bold;
+}
+.address{
+  font-size: 23rpx;
+  color: #666;
+  padding-top: 20rpx;
+  padding-left: 30rpx;
+}
+
+/****************************购买内容*************************************/
+
+.info{
+  width: 700rpx;
+  margin: 0 auto;
+}
+.title{
+  display: flex;
+  align-items: center;
+  margin-top: 36rpx;
+}
+.title image{
+  width: 28rpx;
+  height: 28rpx;
+}
+.title text{
+  font-size: 26rpx;
+  color: #000;
+  font-weight: bold;
+  margin-left: 10rpx;
+}
+.content{
+  margin-top: 15rpx;
+  border-top: 1px #dbdbdb solid;
+  border-bottom: 1px #dbdbdb solid;
+}
+.list image{
+  width: 100rpx;
+  height: 120rpx;
+  margin: 20rpx;
+}
+.totalprice{
+  display: flex;
+  justify-content: space-between;
+  padding: 0 20rpx 28rpx; 
+   /*上  左右  下  */
+  font-size: 26rpx;
+}
+
+/****************************提交订单*************************************/
+.submit{
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  padding: 50rpx 27rpx 0; 
+}
+.submit text{
+  font-size: 26rpx;
+  margin-right: 30rpx;
+}
+.submit text:first-child{
+  color: #666;
+}
+.submit text:nth-child(2){
+  color: #E53E30;
+  font-weight: bold;
+}
+.submit-order{
+  width: 188rpx;
+  height: 76rpx;
+  font-size: 26rpx;
+  background-color:  #E53E30;
+  text-align: center;
+  color: #fff;
+  line-height: 76rpx;
+}

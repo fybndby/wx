@@ -1,0 +1,98 @@
+page{
+  background-color: #eaeaea;
+}
+.cart{
+  background-color: #fff;
+  margin-top: 16rpx;
+  margin-bottom: 8rpx;
+}
+.item-box{
+  display: flex;
+  /* justify-content: space-between; */
+  padding: 46rpx 46rpx 36rpx 46rpx;
+}
+.item-left image{
+  width: 140rpx;
+  height: 160rpx;
+}
+.item-right{
+  margin-left: 50rpx;
+}
+.item-title{
+  font-size: 26rpx;
+  color: #000;
+  height: 70rpx;
+  overflow:hidden;
+}
+.item-price{
+  color: #ff5854;
+  font-size: 26rpx;
+  margin-top:10rpx;
+  margin-bottom: 10rpx;
+}
+.item-option{
+  width: 450rpx;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.del image{
+  width: 35rpx;
+  height: 40rpx;
+}
+.opts-box{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 164rpx;
+  height: 40rpx;
+  border: #a2a2a2 1px solid;
+  border-radius: 10rpx;
+}
+.opt-sub ,.opt-add{
+  width: 43rpx;
+  height: 40rpx;
+  text-align: center;
+  line-height: 40rpx;
+  border-right: #a2a2a2 1px solid;
+}
+.opt-add{
+  border-right: none;
+  border-left: #a2a2a2 1px solid;
+}
+.opt-input input{
+  width: 72rpx;
+  height: 40rpx;
+  text-align: center;
+  font-size: 26rpx;
+}
+.cart-item{
+  border-bottom: #999 1px dotted;
+}
+
+/***************************************结算***************************************/
+.cart-cash{
+  text-align: right;
+  padding: 46rpx; 
+}
+.cash-name{
+  font-size: 23rpx;
+  color: #999;
+}
+.cash-total{
+  font-size: 28rpx;
+  color: #FB4741;
+  font-weight: bold;
+}
+.cash-pay{
+  display: inline-block;
+  background-color:  #FB4741;
+  width: 230rpx;
+  height: 72rpx;
+  text-align: center;
+  font-size: 28rpx;
+  color: #fff;
+  line-height: 72rpx;
+  margin-left: 32rpx;
+}
+

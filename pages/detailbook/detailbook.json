@@ -1,0 +1,6 @@
+{
+  "usingComponents": {
+    "star":"../../component/star"
+  },
+  "navigationBarTitleText": "商品详情"
+}

@@ -1,0 +1,62 @@
+
+
+<view class='myfavorit'>
+
+
+  <view class='myfavorit-item'>
+    <view class='myfavorit-box'>
+      <view class='poster'>
+        <image src='https://www.huachengzhubao.com/syweb10/static/images/temp2.jpg'></image>
+      </view>
+      <view class='content'>
+        <view class='title'>啊啊啊啊呜呜呜呜呜啊啊啊啊啊啊啊啊啊啊啊呜呜呜啊啊啊</view>
+        <view class='author'>阿杰崽</view>
+        <view class='publicer'>出版社：阿杰出版社</view>
+        <view class='public-date'>出版日期：2019-06-06</view>
+        <view class='descript'>这本破书的描述</view>
+        <view class="price">￥68.56</view>
+        <view class='comment'>
+          <view class='stars'>
+            <image class='star-red-25x25' src='http://www.huachengzhubao.com/syweb10/static/ico/star.png'></image>
+            <image class='star-red-25x25' src='http://www.huachengzhubao.com/syweb10/static/ico/star.png'></image>
+            <image class='star-red-25x25' src='http://www.huachengzhubao.com/syweb10/static/ico/star.png'></image>
+            <image class='star-red-25x25' src='http://www.huachengzhubao.com/syweb10/static/ico/star.png'></image>
+            <image class='star-red-25x25' src='http://www.huachengzhubao.com/syweb10/static/ico/star.png'></image>
+          </view>
+          <view class='comment-counts'>999+条评论</view>
+        </view>
+      </view>
+    </view>
+  </view>
+
+
+
+  <view class='myfavorit-item'>
+    <view class='myfavorit-box'>
+      <view class='poster'>
+        <image src='https://www.huachengzhubao.com/syweb10/static/images/temp2.jpg'></image>
+      </view>
+      <view class='content'>
+        <view class='title'>啊啊啊啊呜呜呜呜呜啊啊啊啊啊啊啊啊啊啊啊呜呜呜啊啊啊</view>
+        <view class='author'>阿杰崽</view>
+        <view class='publicer'>出版社：阿杰出版社</view>
+        <view class='public-date'>出版日期：2019-06-06</view>
+        <view class='descript'>这本破书的描述</view>
+        <view class="price">￥68.56</view>
+        <view class='comment'>
+          <view class='stars'>
+            <image class='star-red-25x25' src='http://www.huachengzhubao.com/syweb10/static/ico/star.png'></image>
+            <image class='star-red-25x25' src='http://www.huachengzhubao.com/syweb10/static/ico/star.png'></image>
+            <image class='star-red-25x25' src='http://www.huachengzhubao.com/syweb10/static/ico/star.png'></image>
+            <image class='star-red-25x25' src='http://www.huachengzhubao.com/syweb10/static/ico/star.png'></image>
+            <image class='star-red-25x25' src='http://www.huachengzhubao.com/syweb10/static/ico/star.png'></image>
+          </view>
+          <view class='comment-counts'>999+条评论</view>
+        </view>
+      </view>
+    </view>
+  </view>
+
+
+
+</view>

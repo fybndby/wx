@@ -1,0 +1,302 @@
+
+
+page{
+  margin: 0;
+  padding: 0；
+}
+
+
+/******************************轮播******************************/
+
+swiper{
+  text-align: center;
+  height: 250rpx;
+  margin-top: 16rpx;
+}
+
+swiper .show-image{
+  width: 100%;
+  height: 250rpx;
+}
+
+swiper .slide-image{
+  width: 32px;
+  height: 32px;
+  margin-top: 50px;
+}
+
+/******************************菜单******************************/
+
+.nav{
+  display: flex;
+  flex-wrap:wrap;
+  justify-content: space-between;
+}
+.nav .nav-item{
+  width: 150rpx;
+  text-align: center;
+  margin-top: 30rpx;
+}
+.nav .nav-item .nav-item-img{
+  height: 90rpx;
+}
+
+.nav .nav-item .nav-item-img image{
+  width: 90rpx;
+  height: 90rpx;
+}
+.nav .nav-item .nav-item-text{
+  font-size: 23rpx;
+  color: #5d5d5d;
+}
+
+/******************************畅销书TOP3******************************/
+
+.hotsale{
+  background-color: #FBBEBD;
+  margin-top: 28rpx;
+}
+
+.hotsale .hotsale-box{
+  padding: 26rpx;
+}
+
+.hotsale-title{
+    font-size: 24rpx;
+    color: #fff;
+}
+.hotsale-title .hotsale-title-more{
+  float: right;
+}
+/* .hotsale-item-title{
+  height: 28px;
+}
+.hotsale-item-price{
+  margin-top: 10px;
+} */
+
+/******************************快讯******************************/
+.news{
+  display: flex;
+  align-items: center;
+  width: 100%;
+  height: 95rpx;
+  background: -webkit-linear-gradient(#FBBEBD, #99cccc); /* Safari 5.1 - 6.0 */
+  background: -o-linear-gradient(#FBBEBD, #99cccc); /* Opera 11.1 - 12.0 */
+  background: -moz-linear-gradient(#FBBEBD, #99cccc); /* Firefox 3.6 - 15 */
+  background: linear-gradient(#FBBEBD, #99cccc); /* 标准的语法 */
+
+}
+.news-ico image{
+  width: 90rpx;
+  height: 34rpx;
+  margin-left: 20rpx;
+}
+.news-box{
+  display: flex;
+  align-items: center;
+  width: 700rpx;
+  height: 70rpx;
+  overflow: hidden;
+  margin: 0 auto;
+  background-color: #fff;
+  border-radius: 12rpx;
+}
+.news-body{
+  padding: 20rpx;
+}
+.news-body swiper{
+  text-align: left;
+  overflow: hidden;
+  width: 560rpx;
+  height: 70rpx;
+  line-height: 50rpx;
+  font-size: 24rpx;
+  color: #666;
+}
+
+/******************************特价包邮******************************/
+
+.baoyou{
+  background-color: #99cccc;
+}
+.baoyou .hotsale{
+  margin-top: 0;
+  background: none;
+}
+.baoyou .hotsale .hotsale-item{
+  position: relative; 
+}
+.baoyou .hotsale .hotsale-item .ico99{
+  position: absolute;
+  top: 16rpx;
+  right: 10rpx;
+  width: 74rpx;
+  height: 74rpx;
+
+}
+/******************************渐变******************************/
+.liner{
+  width: 100%;
+  height: 30rpx;
+  background: -webkit-linear-gradient(#99cccc,#fff); /* Safari 5.1 - 6.0 */
+  background: -o-linear-gradient(#99cccc,#fff); /* Opera 11.1 - 12.0 */
+  background: -moz-linear-gradient(#99cccc,#fff); /* Firefox 3.6 - 15 */
+  background: linear-gradient(#99cccc,#fff); /* 标准的语法 */
+  margin-bottom: 30rpx;
+}
+/******************************五星******************************/
+.stars-item-title{
+  display: flex;
+  justify-content: space-between;
+}
+.stars-item-title-name{
+  display: flex;
+  align-items: center;
+  width: 318rpx;
+  height: 51rpx;
+  font-size: 30rpx;
+  color: #fff;
+  line-height: 51rpx;
+  border-bottom-right-radius: 15px;
+}
+.titlebg-color-purple{
+  background: -webkit-linear-gradient(45deg, #d4abfc, #B065F9); /* Safari 5.1 - 6.0 */
+  background: -o-linear-gradient(45deg, #d4abfc, #B065F9); /* Opera 11.1 - 12.0 */
+  background: -moz-linear-gradient(45deg, #d4abfc, #B065F9); /* Firefox 3.6 - 15 */
+  background: linear-gradient(45deg, #d4abfc, #B065F9); /* 标准的语法 */
+}
+.titlebg-color-yellow{
+  background: -webkit-linear-gradient(45deg, #FFC876, #ff9900); /* Safari 5.1 - 6.0 */
+  background: -o-linear-gradient(45deg,  #FFC876, #ff9900); /* Opera 11.1 - 12.0 */
+  background: -moz-linear-gradient(45deg,  #FFC876, #ff9900); /* Firefox 3.6 - 15 */
+  background: linear-gradient(45deg,  #FFC876, #ff9900); /* 标准的语法 */
+}
+.titlebg-color-red{
+  background: -webkit-linear-gradient(45deg, #FF9A94, #FF3B30); /* Safari 5.1 - 6.0 */
+  background: -o-linear-gradient(45deg, #FF9A94, #FF3B30); /* Opera 11.1 - 12.0 */
+  background: -moz-linear-gradient(45deg, #FF9A94, #FF3B30); /* Firefox 3.6 - 15 */
+  background: linear-gradient(45deg, #FF9A94, #FF3B30); /* 标准的语法 */
+}
+.stars-item-title-more{
+  font-size: 24rpx;
+  color: #999;
+  margin-right: 35rpx;
+}
+.stars-item-title-name image{
+  width: 38rpx;
+  height: 36rpx;
+  margin-left: 15rpx;
+}
+.stars-item-title-name text{
+  margin-left:10rpx;
+}
+
+.star-red-25x25{
+  width: 25rpx;
+  height: 25rpx;
+}
+.stars-body-box{
+  display: flex;
+  justify-content: space-between;
+  padding: 25rpx 50rpx 40rpx 34rpx;
+}
+.stars-title{
+  width: 430rpx;
+  height: 75rpx;
+  overflow: hidden;
+  font-size: 30rpx;
+  color: #000;
+}
+.stars-comment{
+  display: flex;
+  align-items: center;
+  width: 300rpx;
+  margin: 20rpx 0;
+}
+.comment-counts{
+  color: #acb4bd;
+  font-size: 22rpx;
+  margin-left: 20rpx;
+}
+.stars-price{
+  color:#d81e06;
+  font-size: 22rpx;
+}
+.stars-price text{
+  font-size: 40rpx;
+}
+.stars-item-body-right image{
+  width: 157rpx;
+  height: 216rpx;
+}
+
+
+/******************************音乐TOP6******************************/
+
+.music{
+  background-color: #AEE800;
+}
+
+.music .hotsale{
+  margin-top: 0;
+  background: none;
+}
+
+.music .hotsale-body{
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.music .hotsale-item .hotsale-item-title, .music-stars-box, .hotsale-item-price{
+  text-align: left;
+  margin-left: 15rpx;
+}
+.music .music-stars-box{
+  display: flex;
+  height: 25rpx;
+  margin-top: 12rpx;
+  margin-bottom: 5rpx;
+}
+.music-stars-item{
+    width: 25rpx;
+    height: 25rpx;
+}
+/******************************渐变******************************/
+.liner-green{
+  width: 100%;
+  height: 45rpx;
+  background: -webkit-linear-gradient( #AEE800, #FFAF37); /* Safari 5.1 - 6.0 */
+  background: -o-linear-gradient(#AEE800, #FFAF37); /* Opera 11.1 - 12.0 */
+  background: -moz-linear-gradient(#AEE800, #FFAF37); /* Firefox 3.6 - 15 */
+  background: linear-gradient(#AEE800, #FFAF37); /* 标准的语法 */
+}
+/******************************电影******************************/
+.movie{
+  background-color: #FFAF37;
+}
+
+.movie .hotsale{
+  margin-top: 0;
+  background: none;
+}
+
+.movie .hotsale-body{
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.movie .hotsale-item .hotsale-item-title, .movie-stars-box, .hotsale-item-price{
+  text-align: left;
+  margin-left: 15rpx;
+}
+.movie .music-stars-box{
+  display: flex;
+  height: 25rpx;
+  margin-top: 12rpx;
+  margin-bottom: 5rpx;
+}
+.movie-stars-item{
+    width: 25rpx;
+    height: 25rpx;
+}

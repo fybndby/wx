@@ -1,0 +1,67 @@
+
+<view class='movie'>
+  <!-- 搜索 -->
+  <view class='search'>
+    <view class='search-box search-movie'>
+      <view class='ico'>
+        <image src='../../static/ico/search.png'></image>
+      </view>
+      <view class='search-text'>
+        <text>搜索全部商品</text>
+      </view>
+    </view>
+  </view>
+  <!-- 分类 -->
+  <view class='class-box'>
+
+      <view class='class-item'>
+        <view class='title'>全部分类</view>
+        <view class='list'>
+        <text class='{{all_active_class}}' data-selectedClass='all_class' bindtap='classSelect'>全部</text>
+          <block wx:for="{{class_style}}">
+            <text class='{{item.myclass}}' data-selectedClass='{{item.cname}}' bindtap='classSelect'>{{item.cname}}</text>
+          </block>
+        </view>
+      </view>
+<!-- 国家 -->
+      <view class='class-item'>
+        <view class='title country'>全部地区</view>
+        <view class='list'>
+        <text class='{{all_active_country}}' data-selectedCountry='all_country' bindtap='countrySelect'>全部</text>
+          <block wx:for="{{class_country}}">
+            <text class='{{item.mycountry}}' data-selectedCountry='{{item.cname}}' bindtap='countrySelect'>{{item.cname}}</text>
+          </block>
+        </view>
+      </view>
+
+  </view>
+
+  <!-- 列表 --> 
+
+  <block wx:for="{{list}}">
+  <view class='movie-item' id="{{item.id}}" bindtap='gomoviedetail'>
+    <view class='movie-box'>
+      <view class='movie-poster'>
+        <image src='{{myhost}}{{item.coverurl}}'></image>
+      </view>
+      <view class='movie-info'>
+        <view class='p-title'>{{item.moviename}}</view>
+        <view class='dirctor'>导演：{{item.derector}}</view>
+        <view class='writer'>编剧：{{item.writer}}</view>
+        <view class='role'>主演：{{item.roles}}</view>
+        <view class='class'>类型：{{item.class_style}}</view>
+        <view class='p-country'>制片国家/地区：{{item.class_country}}</view>
+        <view class='p-price'>￥<text>{{item.price_int}}.</text>{{item.price_dec}}</view>
+        <view class='p-comment'>
+          <view class='stars starsx21'>
+            <stars starnums="{{item.stars}}"></stars>
+          </view>
+          <view class='counts'>{{item.counts}}条评论</view>
+        </view>
+      </view>
+    </view>
+  </view>
+  </block>
+
+</view>
+

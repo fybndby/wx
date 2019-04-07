@@ -1,0 +1,25 @@
+
+
+
+
+.history{
+ padding: 34rpx;
+}
+
+.history-item-box{
+  padding:26rpx 0;
+  border-bottom: #999 1px dotted;
+}
+
+.history-item-box .item-time{
+  font-size: 18rpx;
+  color: #666;
+}
+.history-item-box .item-content{
+  white-space:nowrap;
+  overflow: hidden;
+  text-overflow:ellipsis;
+  color: #000;
+  font-size: 26rpx;
+  margin-top: 10rpx;
+}

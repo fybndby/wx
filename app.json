@@ -1,0 +1,68 @@
+{
+  "pages":[
+    "pages/home/home",
+    "pages/detailmusic/detailmusic",
+    "pages/detailmovie/detailmovie",
+    "pages/detailbook/detailbook",
+    "pages/listmusic/listmusic",
+    "pages/listbook/listbook",
+    "pages/listmovie/listmovie",
+    "pages/pay/pay",
+    "pages/payone/payone",
+    "pages/myorder/myorder",
+    "pages/myhistory/myhistory",
+    "pages/myfavorit/myfavorit",
+    "pages/mycomment/mycomment",
+    "pages/mycc/mycc",
+    "pages/myinfo/myinfo",
+    "pages/my/my",
+    
+    "pages/cart/cart",
+    "pages/scan/scan",
+    
+   
+    
+    
+
+
+    "pages/index/index",
+    "pages/logs/logs"
+  ],
+  "window":{
+    "backgroundTextStyle":"light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "你说书城",
+    "navigationBarTextStyle":"black"
+  },
+  "tabBar": {
+    "color":"#666666",
+    "backgroundColor":"#F7F7FA",
+    "selectedColor":"#ff4444",
+    "list": [
+      {
+        "pagePath": "pages/home/home",
+        "text": "首页",
+        "iconPath":"static/ico/tabbar_home_gray.png",
+        "selectedIconPath":"static/ico/tabbar_home.png"
+      },
+      {
+        "pagePath": "pages/scan/scan",
+        "text": "扫码",
+        "iconPath": "static/ico/tabbar_scan_gray.png",
+        "selectedIconPath": "static/ico/tabbar_scan.png"
+      },
+      {
+        "pagePath": "pages/cart/cart",
+        "text": "购物车",
+        "iconPath": "static/ico/tabbar_cart_gray.png",
+        "selectedIconPath": "static/ico/tabbar_cart.png"
+      },
+      {
+        "pagePath": "pages/my/my",
+        "text": "我的",
+        "iconPath": "static/ico/tabbar_my_gray.png",
+        "selectedIconPath": "static/ico/tabbar_my.png"
+      }
+    ]
+  }
+}

@@ -1,0 +1,49 @@
+/* pages/myfavorit/myfavorit.wxss */
+page{
+  background-color: #f1f1f1;
+}
+.myfavorit-item{
+  background-color: #fff;
+  margin-bottom: 37rpx;
+}
+.myfavorit-box{
+  display: flex;
+  justify-content: space-between;
+  padding: 43rpx;
+}
+.poster image{
+  width: 175rpx;
+  height: 230rpx;
+}
+.content{
+  width: 450rpx;
+  font-size: 23rpx;
+  color: #666;
+}
+.title{
+  color: #000;
+  font-size: 28rpx;
+  margin-bottom: 10rpx;
+  height: 32rpx;
+  overflow: hidden;
+}
+.descript{
+  font-size: 18rpx;
+}
+.price{
+  color: #E43728;
+  font-size: 30rpx;
+  margin-top: 10rpx;
+}
+.comment{
+  display: flex;
+}
+.stars image{
+  width: 21rpx;
+  height: 21rpx;
+  margin: 0 2rpx;
+}
+.stars .comment-counts{
+  color: #a7a7a7;
+  margin-left:8rpx;
+}

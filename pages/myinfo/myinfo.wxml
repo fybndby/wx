@@ -1,0 +1,44 @@
+
+
+<view class='myinfo'>
+
+<form bindsubmit="formSubmit" bindreset="formReset" method="POST" enctype="multipart/form-data">
+  <view class='myinfo-body'>
+    <view class='myinfo-box'>
+
+        <view class='myinfo-item'>
+          <text>您的姓名：</text>
+          <input class='common-input' name="uname" value='{{myname}}'/>
+        </view>
+
+        <view class='myinfo-item'>
+          <text>手机号码：</text>
+          <input class='common-input' name="tel" value='{{mytel}}'/>
+        </view>
+
+        <view class='myinfo-item address'>
+          <text>收货地址：</text>
+          <input class='common-input' name="address" value='{{address}}'/>
+          <button class='maplocation' bindtap='getLocation'>地图定位</button>
+        </view>
+
+        <view class='myinfo-item'>
+          <text>邮政编码：</text>
+          <input class='common-input' name="post" value='{{mypost}}' placeholder='选填'/>
+        </view>
+
+        <view class='myinfo-item photo'>
+          <text>上传头像：</text>
+          <button class='choose-button' bindtap='getPhoto'>点击选择图片或拍照</button>
+          <image src='{{myhost}}{{myheader}}' wx:if="{{myheader.length>0}}" class="myheader"></image>
+        </view>
+
+    </view>
+  </view>
+  <view class='myinfo-submit'>
+    <view><button form-type='submit' class='sure'>确定</button></view>
+    <view><button form-type='submit' class='cancel'>重置</button></view>
+  </view>
+
+</form>
+</view>

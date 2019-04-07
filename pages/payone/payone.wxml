@@ -1,0 +1,43 @@
+
+
+<view class='pay'>
+
+  <view class='contact'>
+    <view class='contact-box'>
+      <view class='whotel'>
+        <view class='who'>
+          <image src='https://www.huachengzhubao.com/syweb10/static/ico/address.png'></image>
+          <text>收货人：{{orderUser}}</text>
+        </view>
+        <view class='tel'>{{orderTel}}</view>
+      </view>
+      <view class='address'>{{orderAddress}}</view>
+    </view>
+  </view>
+
+  <view class='info'>
+    <view class='title'>
+      <image src='https://www.huachengzhubao.com/syweb10/static/ico/content.png'></image>
+      <text>购买内容</text>
+    </view>
+    <view class='content'>
+      <view class='list'>
+
+        <image src="{{myhost}}{{coverurl}}" mode="aspectFit"></image>
+
+      </view>
+      <view class='totalprice'>
+        <text>商品总金额</text>
+        <text>￥{{price}}</text>
+      </view>
+    </view>
+  </view>
+
+  <view class='submit'>
+    <text>总额（含运费）</text>
+    <text>￥{{price+10}}</text>
+    <view class='submit-order' bindtap='submitOrder'>提交订单</view>
+  </view>
+
+</view>
+

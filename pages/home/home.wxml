@@ -1,0 +1,487 @@
+<view class='homecontainer'>
+
+  <!-- 搜索 -->
+
+  <view class='search'>
+
+    <view class='search-box'>
+      <view class='ico'>
+        <image src='../../static/ico/search.png'></image>
+      </view>
+      <view class='search-text'>
+        <text>搜索全部商品</text>
+      </view>
+    </view>
+
+  </view>
+  <!-- 轮播 -->
+  <view class='swiper'>
+    <swiper indicator-dots="{{indicatorDots}}" autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}">
+      <block wx:for="{{imgUrls}}">
+        <swiper-item>
+          <image src="{{item}}" class="slide-image" wx:if="{{isloading}}" />
+          <image src="{{myhost}}{{item.photourl}}" class="show-image" wx:else mode="aspectFill" data-url="{{item.gourl}}" bindtap='gourl'/>
+        </swiper-item>
+      </block>
+    </swiper>
+  </view>
+  <!-- 菜单 -->
+
+  <view class='nav'>
+    <view class='nav-item' data-tap='bookmoretop' bindtap='gobooklist'>
+      <view class='nav-item-img'>
+        <image src='{{host}}/web10/static/nav/nav_hotsale.png'></image>
+      </view>
+      <view class='nav-item-text'>
+        <text>热销图书</text>
+      </view>
+    </view>
+
+    <view class='nav-item' data-tap='newbook' bindtap='gobooklist'>
+      <view class='nav-item-img'>
+        <image src='{{host}}/web10/static/nav/nav_newbook.png'></image>
+      </view>
+      <view class='nav-item-text'>
+        <text>新书上架</text>
+      </view>
+    </view>
+
+    <view class='nav-item' data-tap='free99' bindtap='gobooklist'>
+      <view class='nav-item-img'>
+        <image src='{{host}}/web10/static/nav/nav_99.png'></image>
+      </view>
+      <view class='nav-item-text'>
+        <text>9.9元包邮</text>
+      </view>
+    </view>
+
+    <view class='nav-item'  bindtap='gomusiclist'>
+      <view class='nav-item-img'>
+        <image src='{{host}}/web10/static/nav/nav_music.png'></image>
+      </view>
+      <view class='nav-item-text'>
+        <text>音乐在线</text>
+      </view>
+    </view>
+
+    <view class='nav-item'  bindtap='gomovielist'>
+      <view class='nav-item-img'>
+        <image src='{{host}}/web10/static/nav/nav_movie.png'></image>
+      </view>
+      <view class='nav-item-text'>
+        <text>电影频道</text>
+      </view>
+    </view>
+
+    <view class='nav-item' data-tap='health' bindtap='gobooklist'>
+      <view class='nav-item-img'>
+        <image src='{{host}}/web10/static/nav/nav_health.png'></image>
+      </view>
+      <view class='nav-item-text'>
+        <text>健康养生</text>
+      </view>
+    </view>
+
+    <view class='nav-item' data-tap='younth' bindtap='gobooklist'>
+      <view class='nav-item-img'>
+        <image src='{{host}}/web10/static/nav/nav_culture.png'></image>
+      </view>
+      <view class='nav-item-text'>
+        <text>青春文学</text>
+      </view>
+    </view>
+
+    <view class='nav-item' data-tap='people' bindtap='gobooklist'>
+      <view class='nav-item-img'>
+        <image src='{{host}}/web10/static/nav/nav_people.png'></image>
+      </view>
+      <view class='nav-item-text'>
+        <text>人物传</text>
+      </view>
+    </view>
+
+    <view class='nav-item' data-tap='child' bindtap='gobooklist'>
+      <view class='nav-item-img'>
+        <image src='{{host}}/web10/static/nav/nav_child.png'></image>
+      </view>
+      <view class='nav-item-text'>
+        <text>儿童图书</text>
+      </view>
+    </view>
+
+    <view class='nav-item' data-tap='science' bindtap='gobooklist'>
+      <view class='nav-item-img'>
+        <image src='{{host}}/web10/static/nav/nav_science.png'></image>
+      </view>
+      <view class='nav-item-text'>
+        <text>科学技术</text>
+      </view>
+    </view>
+
+
+  </view>
+
+
+  <!-- 畅销书top3 -->
+  <view class='hotsale'>
+
+    <view class='hotsale-box'>
+
+      <view class='hotsale-title'>
+        <text class='hotsale-title-name'>畅销书排行榜-TOP3</text>
+        <text class='hotsale-title-more' bindtap='showMoreBookTop3'>查看更多></text>
+      </view>
+      <view class='hotsale-body'>
+
+      <block wx:for="{{booktop3}}">
+        <view class='hotsale-item' id='{{item.pid}}' bindtap='gobookdetail'>
+          <view class='hotsale-item-box'>
+            <image src='{{myhost}}{{item.coverurl}}' mode='aspectFill'></image>
+          </view>
+          <view class='hotsale-item-title'>{{item.bookname}}</view>
+          <view class='hotsale-item-price'>￥
+            <text>{{item.price_int}}.</text>{{item.price_dec}}</view>
+        </view>
+      </block>
+        
+
+
+
+      </view>
+
+    </view>
+
+  </view>
+
+  <!-- 快讯 -->
+
+  <view class='news'>
+    <view class='news-box'>
+      <view class='news-ico'>
+        <image src='http://www.huachengzhubao.com/syweb10/static/ico/news.gif'></image>
+      </view>
+      <view class='news-body'>
+
+        <swiper vertical="true" autoplay="true" interval="{{interval}}" duration="{{duration}}">
+          <block wx:for="{{newsInfo}}">
+
+            <swiper-item>
+              <view>{{item}}</view>
+            </swiper-item>
+
+          </block>
+        </swiper>
+
+      </view>
+    </view>
+
+
+
+
+  </view>
+  <!-- 特价包邮 -->
+
+  <view class='baoyou'>
+  <view class='hotsale'>
+    <view class='hotsale-box'>
+
+      <view class='hotsale-title'>
+        <text class='hotsale-title-name'>新书抢先看</text>
+        <text class='hotsale-title-more'>特价包邮></text>
+      </view>
+      <view class='hotsale-body'>
+
+      <block wx:for="{{newbook}}">
+        <view class='hotsale-item' id="{{item.id}}" bindtap='gonewbookdetail'>
+          <view class='hotsale-item-box'>
+            <image src='{{myhost}}{{item.coverurl}}'></image>
+          </view>
+          <view class='hotsale-item-title'>{{item.bookname}}</view>
+          <view class='hotsale-item-price'>￥<text>{{item.price_int}}.</text>{{item.price_dec}}</view>
+            <view><image class='ico99' src='{{host}}/web10/static/ico/ico99.png' wx:if="{{item.fp>0}}"></image></view>
+        </view>
+      </block>
+       
+
+
+
+      </view>
+
+    </view>
+  </view>
+  </view>
+<!-- 渐变 -->
+<view class='liner'></view>
+
+
+  <!-- 五星图书 -->
+  <view class='stars'>
+    <!-- 标题 -->
+    <view class='stars-item' wx:if="{{starbook.bookname}}">
+      <view class='stars-item-title'>
+          <view class='stars-item-title-name titlebg-color-purple'>
+           <image src='http://www.huachengzhubao.com/syweb10/static/ico/stars-outline.png'></image>
+          <text>五星图书榜第一名</text>
+          </view>
+          <view class='stars-item-title-more'>查看更多></view>
+      </view>
+
+      <view class='stars-body'>
+
+      <!-- 盒子 -->
+      <view class='stars-body-box'>
+                <!-- 左侧 -->
+                    <view class='stars-item-body-left'>
+                      <view class='stars-title'>
+                      <text>{{starbook.bookname}}</text>
+                      </view>
+                      <view class='stars-comment'>
+                          <view class='stars5'>
+
+                              <star starnums="5"></star>
+
+                          </view>
+                          <view class='comment-counts'>{{starbook.counts}}条评论</view>
+                      </view> 
+                      <view class='stars-price'>￥<text>26.</text>25</view>
+                    </view>
+                    <!-- 右侧 -->
+                    <view class='stars-item-body-right'>
+                      <image src='{{myhost}}{{starbook.coverurl}}' mode='aspectFill'></image>
+                    </view>
+              </view>
+          </view>
+    </view>
+  
+  <!-- 标题 -->
+    <view class='stars-item' wx:if="{{starmusic.musicname}}">
+      <view class='stars-item-title'>
+          <view class='stars-item-title-name titlebg-color-yellow'>
+           <image src='http://www.huachengzhubao.com/syweb10/static/ico/stars-outline.png'></image>
+          <text>五星音乐榜第一名</text>
+          </view>
+          <view class='stars-item-title-more'>查看更多></view>
+      </view>
+
+      <view class='stars-body'>
+
+      <!-- 盒子 -->
+      <view class='stars-body-box'>
+                <!-- 左侧 -->
+                    <view class='stars-item-body-left'>
+                      <view class='stars-title'>
+                      <text>{{starmusic.musicname}}</text>
+                      </view>
+                      <view class='stars-comment'>
+                          <view class='stars5'>
+                              <star starnums="5"></star>
+                          </view>
+                          <view class='comment-counts'>{{starmusic.counts}}条评论</view>
+                      </view> 
+                      <view class='stars-price'>￥<text>26.</text>25</view>
+                    </view>
+                    <!-- 右侧 -->
+                    <view class='stars-item-body-right'>
+                      <image src='{{myhost}}{{starmusic.coverurl}}' mode='aspectFill'></image>
+                    </view>
+              </view>
+          </view>
+    </view>
+
+     <!-- 标题 -->
+    <view class='stars-item' wx:if="{{starmovie.moviename}}">
+      <view class='stars-item-title'>
+          <view class='stars-item-title-name titlebg-color-red'>
+           <image src='http://www.huachengzhubao.com/syweb10/static/ico/stars-outline.png'></image>
+          <text>五星电影榜第一名</text>
+          </view>
+          <view class='stars-item-title-more'>查看更多></view>
+      </view>
+
+      <view class='stars-body'>
+
+      <!-- 盒子 -->
+      <view class='stars-body-box'>
+                <!-- 左侧 -->
+                    <view class='stars-item-body-left'>
+                      <view class='stars-title'>
+                      <text>{{starmovie.moviename}}</text>
+                      </view>
+                      <view class='stars-comment'>
+                          <view class='stars5'>
+                              <star starnums="5"></star>
+                          </view>
+                          <view class='comment-counts'>{{starmovie.counts}}条评论</view>
+                      </view> 
+                      <view class='stars-price'>￥<text>26.</text>25</view>
+                    </view>
+                    <!-- 右侧 -->
+                    <view class='stars-item-body-right'>
+                      <image src='{{myhost}}{{starmovie.coverurl}}'></image>
+                    </view>
+              </view>
+          </view>
+    </view>
+  
+  
+  
+  </view>
+
+
+
+
+  <!-- 流行音乐top6 -->
+  <view class='music'>
+
+
+   <view class='hotsale'>
+
+    <view class='hotsale-box'>
+
+      <view class='hotsale-title'>
+        <text class='hotsale-title-name'>流行音乐榜-TOP6</text>
+        <text class='hotsale-title-more'>查看更多></text>
+      </view>
+      <view class='hotsale-body'>
+
+      <block wx:for="{{musictop6}}">
+        <view class='hotsale-item'>
+          <view class='hotsale-item-box'>
+            <image src='{{myhost}}{{item.coverurl}}' mode='aspectFill'></image>
+          </view>
+          <view class='hotsale-item-title'>{{item.musicname}}</view>
+          <view class='music-stars-box'>
+              <star starnums="{{item.stars}}"></star>
+          </view>
+          <view class='hotsale-item-price'>￥<text>3.</text>00</view>
+        </view>
+      </block>
+
+
+      </view>
+
+    </view>
+
+  </view>
+
+  </view>
+
+  <!-- 渐变 -->
+  <view class='liner-green'></view>
+  <!-- 电影top6 -->
+  
+  <view class='movie'>
+
+
+  <view class='hotsale'>
+
+    <view class='hotsale-box'>
+
+      <view class='hotsale-title'>
+        <text class='hotsale-title-name'>电影票房榜-TOP6</text>
+        <text class='hotsale-title-more'>查看更多></text>
+      </view>
+      <view class='hotsale-body'>
+
+        <view class='hotsale-item'>
+          <view class='hotsale-item-box'>
+            <image src='../../static/images/images/xsk.jpg'></image>
+          </view>
+          <view class='hotsale-item-title'>肖申克的救赎</view>
+          <view class='music-stars-box'>
+              <image class='music-stars-item' src='../../static/ico/star-yellow.png'></image>
+              <image class='music-stars-item' src='../../static/ico/star-yellow.png'></image>
+              <image class='music-stars-item' src='../../static/ico/star-yellow.png'></image>
+              <image class='music-stars-item' src='../../static/ico/star-yellow.png'></image>
+              <image class='music-stars-item' src='../../static/ico/star-yellow.png'></image>
+          </view>
+          <view class='hotsale-item-price'>￥<text>23.</text>00</view>
+        </view>
+
+        <view class='hotsale-item'>
+          <view class='hotsale-item-box'>
+            <image src='../../static/images/images/bwbj.jpg'></image>
+          </view>
+          <view class='hotsale-item-title'>霸王别姬</view>
+          <view class='music-stars-box'>
+              <image class='music-stars-item' src='../../static/ico/star-yellow.png'></image>
+              <image class='music-stars-item' src='../../static/ico/star-yellow.png'></image>
+              <image class='music-stars-item' src='../../static/ico/star-yellow.png'></image>
+              <image class='music-stars-item' src='../../static/ico/star-yellow.png'></image>
+              <image class='music-stars-item' src='../../static/ico/star-yellow.png'></image>
+          </view>
+          <view class='hotsale-item-price'>￥<text>2.</text>80</view>
+        </view>
+
+        <view class='hotsale-item'>
+          <view class='hotsale-item-box'>
+            <image src='../../static/images/images/sqdw.png'></image>
+          </view>
+          <view class='hotsale-item-title'>神奇动物：...</view>
+          <view class='music-stars-box'>
+              <image class='music-stars-item' src='../../static/ico/star-yellow.png'></image>
+              <image class='music-stars-item' src='../../static/ico/star-yellow.png'></image>
+              <image class='music-stars-item' src='../../static/ico/star-yellow.png'></image>
+              <image class='music-stars-item' src='../../static/ico/star-gray.png'></image>
+              <image class='music-stars-item' src='../../static/ico/star-gray.png'></image>
+          </view>
+          <view class='hotsale-item-price'>￥<text>3.</text>00</view>
+        </view>
+
+        <view class='hotsale-item'>
+          <view class='hotsale-item-box'>
+            <image src='../../static/images/images/bxmy.png'></image>
+          </view>
+          <view class='hotsale-item-title'>波西米亚狂想曲</view>
+          <view class='music-stars-box'>
+              <image class='music-stars-item' src='../../static/ico/star-yellow.png'></image>
+              <image class='music-stars-item' src='../../static/ico/star-yellow.png'></image>
+              <image class='music-stars-item' src='../../static/ico/star-yellow.png'></image>
+              <image class='music-stars-item' src='../../static/ico/star-yellow.png'></image>
+              <image class='music-stars-item' src='../../static/ico/star-gray.png'></image>
+          </view>
+          <view class='hotsale-item-price'>￥<text>4.</text>03</view>
+        </view>
+
+        <view class='hotsale-item'>
+          <view class='hotsale-item-box'>
+            <image src='../../static/images/images/ygmx.png'></image>
+          </view>
+          <view class='hotsale-item-title'>一个明显的诞生</view>
+          <view class='music-stars-box'>
+              <image class='music-stars-item' src='../../static/ico/star-yellow.png'></image>
+              <image class='music-stars-item' src='../../static/ico/star-yellow.png'></image>
+              <image class='music-stars-item' src='../../static/ico/star-yellow.png'></image>
+              <image class='music-stars-item' src='../../static/ico/star-yellow.png'></image>
+              <image class='music-stars-item' src='../../static/ico/star-yellow.png'></image>
+          </view>
+          <view class='hotsale-item-price'>￥<text>2.</text>80</view>
+        </view>
+
+        <view class='hotsale-item'>
+          <view class='hotsale-item-box'>
+            <image src='../../static/images/images/wmbshy.png'></image>
+          </view>
+          <view class='hotsale-item-title'>我们不是还有...</view>
+          <view class='music-stars-box'>
+              <image class='music-stars-item' src='../../static/ico/star-yellow.png'></image>
+              <image class='music-stars-item' src='../../static/ico/star-yellow.png'></image>
+              <image class='music-stars-item' src='../../static/ico/star-yellow.png'></image>
+              <image class='music-stars-item' src='../../static/ico/star-gray.png'></image>
+              <image class='music-stars-item' src='../../static/ico/star-gray.png'></image>
+          </view>
+          <view class='hotsale-item-price'>￥<text>3.</text>00</view>
+        </view>
+
+
+
+      </view>
+
+    </view>
+
+  </view>
+  
+  
+  </view>
+
+  </view>

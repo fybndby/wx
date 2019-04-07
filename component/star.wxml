@@ -1,0 +1,7 @@
+
+
+
+
+<block wx:for="{{list}}">
+  <image src='{{item}}' class='star-red-25x25'></image>
+</block>

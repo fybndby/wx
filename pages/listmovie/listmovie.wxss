@@ -1,0 +1,51 @@
+
+.search .search-movie{
+  background-color: #FFDFEC;
+}
+.class-box{
+  width: 705rpx;
+  margin: 0 auto;
+  margin-bottom: 30rpx;
+}
+
+.title{
+  height: 28rpx;
+  line-height: 28rpx;
+  color: #4f4f4f;
+  font-size: 24rpx;
+  border-left: #ff0000 7rpx solid;
+  padding-left: 10rpx;
+}
+.list{
+  display: flex;
+  flex-wrap: wrap;
+  padding-left: 17rpx;
+  font-size: 24rpx;
+  color: #999;
+}
+.list text{
+  display: block;
+  padding: 5rpx 15rpx;
+  border: #ccc 1px solid;
+  border-radius: 30rpx;
+  margin-top: 10rpx;
+  margin-left: 10rpx;
+}
+.list .active-class{
+  color: #ff0000;
+  border: #ff0000 1px solid;
+}
+.country{
+  border-left: #99cc00 7rpx solid;
+}
+.list .active-country{
+  color: #99cc00;
+  border: #99cc00 1px solid;
+}
+.class-item{
+  margin-top: 30rpx;
+}
+.book-list .movie-item{
+  border: none;
+  border-bottom: #e4e4e4 1px solid;
+}

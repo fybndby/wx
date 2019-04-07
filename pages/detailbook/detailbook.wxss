@@ -1,0 +1,62 @@
+
+page{
+  background-color: #eaeaea;
+}
+.poster{
+    background-color: #fff;
+}
+.poster-box{
+  width: 500rpx;
+  height: 710rpx;
+  margin: 0 auto;
+}
+.poster swiper{
+  height: 710rpx;
+}
+.poster swiper image{
+  width: 470rpx;
+  height: 710rpx;
+}
+/**********************简介*************************/
+.view{
+  background-color: #fff;
+}
+.title-name{
+  font-size: 28rpx;
+  color: #333;
+  font-weight: bold;
+  border-left: #ff0000 7rpx solid;
+  padding-left: 10rpx;
+}
+.view-title{
+  display: flex;
+  justify-content: space-between;
+  padding-top: 30rpx;
+}
+.add-favorite image{
+  width: 135rpx;
+  height: 35rpx;
+}
+.view-body{
+  font-size: 20rpx;
+  color: #808080;
+  padding-left: 18rpx;
+  margin-top: 20rpx;
+}
+
+/**价格**/
+.price{
+  background-color: #fff;
+  font-size: 26rpx;
+  color: #ff0000;
+  padding-left: 46rpx;
+  padding-bottom: 30rpx;
+  margin-bottom: 30rpx;
+}
+.price text{
+  font-size: 30rpx;
+}
+
+
+/*****/
+

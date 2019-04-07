@@ -1,0 +1,99 @@
+
+page{
+  background: #f1f1f1 url(https://www.huachengzhubao.com/syweb10/static/images/mybg.jpg) no-repeat;
+  background-size: 100%;
+}
+
+.header{
+  text-align: center;
+}
+.header image{
+  width: 106rpx;
+  height: 106rpx;
+  border-radius: 50%;
+  border: white 2px solid;
+}
+.hello{
+  text-align: center;
+  font-size: 20rpx;
+  color: #fff;
+}
+/************************列表*******************************/
+.items{
+  display: flex;
+  justify-content: space-between;
+  width: 670rpx;
+  margin: 0 auto;
+  margin-top: 45rpx;
+}
+.item{
+  text-align: center;
+}
+.item image{
+  width: 45rpx;
+  height: 45rpx;
+}
+.item text{
+  display: block;
+  color: #fff;
+  font-size: 22rpx;
+}
+
+/******************工具************************/
+
+.tools{
+  display: flex;
+  justify-content: space-between;
+  width: 440rpx;
+  height: 96rpx;
+  background-color: #fff;
+  border-radius: 10rpx;
+  margin: 0 auto;
+  margin-top: 25rpx;
+}
+.tools-item{
+  position: relative;
+  text-align: center;
+  width: 146rpx;
+  padding-top: 10rpx;
+}
+.tools-item image{
+    width: 42rpx;
+    height: 42rpx;
+}
+.tools-item view{
+  font-size: 22rpx;
+  color: #666;
+}
+.tools-item-img{
+  height: 45rpx;
+}
+.btn{
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  border: none;
+  outline: none;
+  opacity: 0;
+}
+
+/**********************推荐****************************/
+.recommend-title{
+  margin-top: 48rpx;
+  text-align: center;
+}
+.recommend-title image{
+  width: 38rpx;
+  height: 30rpx;
+}
+.recommend-title text{
+  font-size: 26rpx;
+  color: #F7415E;
+}
+.recommend-body{
+  padding: 24rpx;
+}
+.hotsale-body{
+  flex-wrap: wrap;
+}

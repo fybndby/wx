@@ -1,0 +1,25 @@
+
+.search .search-book{
+  background-color: #d2ffff;
+}
+.class-book{
+  display: flex;
+  flex-wrap: wrap;
+}
+.class-book view{
+  color: #4f4f4f;
+  font-size: 30rpx;
+  width: 25%;
+  text-align: center;
+  border-bottom: #e4e4e4 1px solid;
+  padding-top: 32rpx;
+  padding-bottom: 20rpx;
+}
+.class-book .active{
+  color: red;
+  border-bottom: red 1px solid;
+}
+.book-list .movie-item{
+  border: none;
+  border-bottom: #e4e4e4 1px solid;
+}

@@ -1,0 +1,158 @@
+<view class='detailmusic'>
+  <!-- 信息 -->
+  <view class='music-info'>
+    <view class='comm-info'>
+      <view class='comm-box'>
+        <view class='comm-info-name'>相关信息</view>
+      </view>
+      <view class='player'>
+         <view class='poster' style='background:url("{{myhost}}{{datas.coverurl}}") no-repeat;background-size:contain;'>
+         <image src='../../static/ico/play_btn.png' bindtap='play' wx:if="{{!isplay}}"></image>
+         <image src='../../static/ico/pause_btn.png' bindtap='pause' wx:if="{{isplay}}"></image>
+         </view>
+         
+         <text class='music-name'>{{datas.musicname}}</text>
+         <text class='music-singer'>{{datas.singer}}</text>
+         <text class='music-time'>{{dt}}</text>
+      </view>
+      <view class='commonstyle author'>歌手： {{datas.singer}}
+        <text class='viewproduct'>查看作品></text>
+      </view>
+      <view class='commonstyle publicer'>作曲： {{datas.compose}}
+        <text class='viewproduct'>查看作品></text>
+      </view>
+      <view class='commonstyle publicer'>填词： {{datas.writer}}
+        <text class='viewproduct'>查看作品></text>
+      </view>
+      <view class='commonstyle class'>分类： 音乐>{{datas.cname}}</view>
+    </view>
+  </view>
+  <!-- 价格 -->
+  <view class='price-box'>
+
+        <view class='vip-price'>
+          <view class='comm-info-name'>价格</view>
+          <view class='price'>￥<text>{{datas.price_int}}.</text>{{datas.price_dec}}</view>
+        </view>
+        <view class='btn'>
+          <view class='play btn-item' bindtap='play'>
+            <image src='../../static/ico/play.png'></image>
+          播放</view>
+          <view class='down btn-item' bindtap='pause'>
+            <image src='../../static/ico/play.png'></image>
+          暂停</view>
+          <view class='stop btn-item' bindtap='stop'>
+            <image src='../../static/ico/play.png'></image>
+          停止</view>
+          <view class='favorite btn-item'>
+            <image src='../../static/ico/collect.png'></image>
+          收藏</view>
+        </view>
+
+     </view>
+  <!-- 歌词 -->
+    <view class='view'>
+    <view class='comm-box'>
+        <view class='view-title'>
+          <view class='title-name'>歌词</view>
+        </view>
+        <view class='view-body'>
+        <rich-text nodes="{{datas.words}}"></rich-text>
+        </view>
+    </view>
+  </view>
+  <!-- 底部 -->
+  <view class='comm-comment'>
+          <view class='comm-box'>
+            <view class='comm-info-name yellow-line'>商品评论</view>
+          </view>
+
+          <view class='comment-item'>
+            <view class='comment-author'>
+              <view class='author-header'>
+                <image src='http://www.huachengzhubao.com/syweb10/static/images/header.png'></image>
+              </view>
+              <view class='author-stars'>
+                <view class='author-name'>李**</view>
+                <view class='starsx21 comment-stars'>
+                  <image class='star-red-25x25' src='http://www.huachengzhubao.com/syweb10/static/ico/star.png'></image>
+                  <image class='star-red-25x25' src='http://www.huachengzhubao.com/syweb10/static/ico/star.png'></image>
+                  <image class='star-red-25x25' src='http://www.huachengzhubao.com/syweb10/static/ico/star.png'></image>
+                  <image class='star-red-25x25' src='http://www.huachengzhubao.com/syweb10/static/ico/star.png'></image>
+                  <image class='star-red-25x25' src='http://www.huachengzhubao.com/syweb10/static/ico/star.png'></image>
+                </view>
+              </view>
+            </view>
+            <view class='comment-content'>
+                      立刻就很过分的第三
+            </view>
+          </view>
+
+          <view class='comment-item'>
+            <view class='comment-author'>
+              <view class='author-header'>
+                <image src='http://www.huachengzhubao.com/syweb10/static/images/header.png'></image>
+              </view>
+              <view class='author-stars'>
+                <view class='author-name'>李**</view>
+                <view class='starsx21 comment-stars'>
+                  <image class='star-red-25x25' src='http://www.huachengzhubao.com/syweb10/static/ico/star.png'></image>
+                  <image class='star-red-25x25' src='http://www.huachengzhubao.com/syweb10/static/ico/star.png'></image>
+                  <image class='star-red-25x25' src='http://www.huachengzhubao.com/syweb10/static/ico/star.png'></image>
+                  <image class='star-red-25x25' src='http://www.huachengzhubao.com/syweb10/static/ico/star.png'></image>
+                  <image class='star-red-25x25' src='http://www.huachengzhubao.com/syweb10/static/ico/star.png'></image>
+                </view>
+              </view>
+            </view>
+            <view class='comment-content'>
+                      立刻就很过分的第三这谁顶得住啊
+            </view>
+          </view>
+
+          <view class='comment-item'>
+            <view class='comment-author'>
+              <view class='author-header'>
+                <image src='http://www.huachengzhubao.com/syweb10/static/images/header.png'></image>
+              </view>
+              <view class='author-stars'>
+                <view class='author-name'>李**</view>
+                <view class='starsx21 comment-stars'>
+                  <image class='star-red-25x25' src='http://www.huachengzhubao.com/syweb10/static/ico/star.png'></image>
+                  <image class='star-red-25x25' src='http://www.huachengzhubao.com/syweb10/static/ico/star.png'></image>
+                  <image class='star-red-25x25' src='http://www.huachengzhubao.com/syweb10/static/ico/star.png'></image>
+                  <image class='star-red-25x25' src='http://www.huachengzhubao.com/syweb10/static/ico/star.png'></image>
+                  <image class='star-red-25x25' src='http://www.huachengzhubao.com/syweb10/static/ico/star.png'></image>
+                </view>
+              </view>
+            </view>
+            <view class='comment-content'>
+                      立刻就很过分的第三那我好饿啊啊啊啊晚上吃什么啊啊啊啊
+            </view>
+          </view>
+  </view>
+
+  <!-- 垫高 -->
+      <view style='height:200rpx;'></view>
+  <!-- 底部 -->
+    <view class='footer'>
+      <view class='hsc fl'>
+        <view class='hsc-home' bindtap='gohome'>
+          <view class='hsc-home-img'><image src='../../static/ico/tabbar_home_gray.png'></image></view>
+          <view class='hsc-home-text'>首页</view>
+        </view>
+        <view class='hsc-share'>
+          <button></button>
+            <view class='share-ico'><image src='../../static/ico/share.png'></image></view>
+            <view class='share-text'>分享</view>
+        </view>
+        <view class='hsc-cart' bindtap='gocart'>
+           <view class='hsc-home-img'><image src='../../static/ico/tabbar_cart_gray.png'></image></view>
+           <view class='hsc-home-text'>购物车</view>
+           <view class='hsc-cart-count'>{{cartCounts}}</view>
+        </view>
+      </view>
+      <view class='addtocart fr' bindtap='add2cart'>加入购物车</view>
+      <view class='buynow fr'>立即购买</view>
+    </view>
+
+</view>

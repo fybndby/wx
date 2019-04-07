@@ -1,0 +1,29 @@
+
+
+<view class='history'>
+
+      <view class='history-item-box'>
+        <view class='box-item'>
+          <view class='item-time'>日期：2018-12-04 08：30：30</view>
+          <view class='item-content'>健康日历2019：丁香医生(团购电话：010-5799999</view>
+        </view>
+      </view>
+
+      <view class='history-item-box'>
+        <view class='box-item'>
+          <view class='item-time'>日期：2018-12-04 08：30：30</view>
+          <view class='item-content'>健康日历2019：丁香医生(团购电话：010-5799999</view>
+        </view>
+      </view>
+
+      <view class='history-item-box'>
+        <view class='box-item'>
+          <view class='item-time'>日期：2018-12-04 08：30：30</view>
+          <view class='item-content'>健康日历2019：丁香医生(团购电话：010-5799999</view>
+        </view>
+      </view>
+
+
+</view>
+
+

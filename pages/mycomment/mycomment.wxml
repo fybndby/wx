@@ -1,0 +1,46 @@
+
+<view class='mycomment'>
+
+
+  <view class='mycomment-item'>
+    <view class='mycomment-item-box'>
+      <view class='product-name'>产品产品名称产品名称产品名称产品名称产品名称产品名称产品名称产品名称产品名称名称</view>
+      <view class='stars'>
+          <image class='star-red-25x25' src='http://www.huachengzhubao.com/syweb10/static/ico/star.png'></image>
+          <image class='star-red-25x25' src='http://www.huachengzhubao.com/syweb10/static/ico/star.png'></image>
+          <image class='star-red-25x25' src='http://www.huachengzhubao.com/syweb10/static/ico/star.png'></image>
+          <image class='star-red-25x25' src='http://www.huachengzhubao.com/syweb10/static/ico/star.png'></image>
+          <image class='star-red-25x25' src='http://www.huachengzhubao.com/syweb10/static/ico/star.png'></image>
+      </view>
+      <view class='editer'>
+        <textarea value='我的评论'/>
+      </view>
+      <view class='button-sure'>
+        <button>确定</button>
+      </view>
+    </view>
+  </view>
+
+  <view class='mycomment-item'>
+    <view class='mycomment-item-box'>
+      <view class='product-name'>产品产品名称产品名称产品名称产品名称产品名称产品名称产品名称产品名称产品名称名称</view>
+      <view class='stars'>
+          <image class='star-red-25x25' src='http://www.huachengzhubao.com/syweb10/static/ico/star.png'></image>
+          <image class='star-red-25x25' src='http://www.huachengzhubao.com/syweb10/static/ico/star.png'></image>
+          <image class='star-red-25x25' src='http://www.huachengzhubao.com/syweb10/static/ico/star.png'></image>
+          <image class='star-red-25x25' src='http://www.huachengzhubao.com/syweb10/static/ico/star.png'></image>
+          <image class='star-red-25x25' src='http://www.huachengzhubao.com/syweb10/static/ico/star.png'></image>
+      </view>
+      <view class='editer'>
+        <textarea value='我的评论'/>
+      </view>
+      <view class='button-sure'>
+        <button>确定</button>
+      </view>
+    </view>
+  </view>
+
+
+
+
+</view>

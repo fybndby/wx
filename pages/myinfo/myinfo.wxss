@@ -1,0 +1,97 @@
+page{
+  background-color: #f1f1f1;
+}
+
+.myinfo{
+  padding: 0 22rpx;
+}
+
+.myinfo-body , .myinfo-submit{
+  background-color: #fff;
+  border-radius: 10rpx;
+  margin-top: 30rpx;
+}
+.myinfo-item{
+  height: 65rpx;
+  border-bottom: #d8d8d8 1px solid;
+  font-size: 26rpx;
+  color: #666;
+  line-height: 65rpx;
+  padding-left: 12rpx;
+  margin-bottom: 34rpx;
+}
+.myinfo-box{
+  padding: 18rpx;
+}
+.myinfo-item text{
+  float: left;
+}
+.myinfo-item .common-input{
+  float: left;
+  /* border: 1px black solid; */
+  width: 300rpx;
+  height: 65rpx;
+  line-height: 65rpx;
+}
+.address{
+  width: 494rpx;
+  position: relative;
+}
+.maplocation{
+  position: absolute;
+  right: -160rpx;
+  top: 20rpx;
+  width: 143rpx;
+  height: 38rpx;
+  font-size: 20rpx;
+  color: #fff;
+  line-height: 38rpx;
+  background-color: #9999ff;
+}
+.photo{
+  position: relative;
+  border-bottom: none;
+}
+.choose-button{
+  width: 250rpx;
+  height: 33rpx;
+  font-size: 20rpx;
+  color: #fff;
+  line-height: 33rpx;
+  background-color: #99cc00;
+  position: absolute;
+  left: 190rpx;
+  top: 20rpx;
+}
+/**********************************/
+
+.myinfo-submit{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 92rpx;
+}
+.myinfo-submit button{
+  width: 147rpx;
+  height: 46rpx;
+  line-height: 46rpx;
+  font-size: 26rpx;
+  color: #fff;
+  border-radius: 50rpx;
+}
+.sure{
+  background-color: #ff0000;
+}
+.cancel{
+  background-color: #999;
+  margin-left: 20rpx;
+}
+.photo image{
+width: 100rpx;
+height: 100rpx;
+position: absolute;
+right: 50rpx;
+top: 0;
+
+}
+
